@@ -22,7 +22,7 @@ modules:
     sources:
       - type: archive
         url: 'https://github.com/g-fb/haruna/archive/0.1.1.tar.gz'
-        sha256: 11be0bfca6f4b079f2a6aeaf7807573bfeb396671e2acfd579724082159d4936
+        sha256: 6b0b6360b3f6c5750b01245ca50b60c13545bfa4207e92c19a1f677faa7c5f1a
     modules:
       - name: libmpv
         cleanup:
