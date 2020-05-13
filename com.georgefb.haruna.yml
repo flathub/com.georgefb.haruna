@@ -21,8 +21,8 @@ modules:
     buildsystem: cmake-ninja
     sources:
       - type: archive
-        url: 'https://github.com/g-fb/haruna/archive/0.1.1.tar.gz'
-        sha256: 6b0b6360b3f6c5750b01245ca50b60c13545bfa4207e92c19a1f677faa7c5f1a
+        url: 'https://github.com/g-fb/haruna/archive/0.1.2.tar.gz'
+        sha256: ec3f907055a5f36a887f5e08b22ded7e75e65d5dcd152f23a31782162704597d
     modules:
       - name: libmpv
         cleanup:
@@ -147,5 +147,5 @@ modules:
           - install youtube-dl /app/bin
         sources:
           - type: archive
-            url: 'https://github.com/ytdl-org/youtube-dl/archive/2020.03.08.tar.gz'
-            sha256: 5801aa756d054aa35e0e6a64bd7fee5782bb3c6092886da9714802ee3ab4fb02
+            url: 'https://github.com/ytdl-org/youtube-dl/archive/2020.05.08.tar.gz'
+            sha256: 99c7d1fd490fce71ab92d9b54b73e669a9370c6dbc3010590f690880cf3728f3
