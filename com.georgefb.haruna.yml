@@ -148,4 +148,4 @@ modules:
         sources:
           - type: archive
             url: 'https://github.com/ytdl-org/youtube-dl/archive/2020.06.06.tar.gz'
-            sha256: 99c7d1fd490fce71ab92d9b54b73e669a9370c6dbc3010590f690880cf3728f3
+            sha256: 9b29c376fdb4ebeda084ade898a678c9437b791bf7e8c6d71aef9285d376c722
