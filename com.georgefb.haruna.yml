@@ -147,5 +147,5 @@ modules:
           - install youtube-dl /app/bin
         sources:
           - type: archive
-            url: 'https://github.com/ytdl-org/youtube-dl/archive/2020.05.08.tar.gz'
+            url: 'https://github.com/ytdl-org/youtube-dl/archive/2020.06.06.tar.gz'
             sha256: 99c7d1fd490fce71ab92d9b54b73e669a9370c6dbc3010590f690880cf3728f3
