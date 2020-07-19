@@ -23,6 +23,8 @@ modules:
       - type: archive
         url: 'https://github.com/g-fb/haruna/archive/0.1.3.tar.gz'
         sha256: 9d96a6e9fd33375a2a5d54db0e6a3b33cb7150e0ccf6bc45b87c076989b19df0
+      - type: patch
+        path: '001-theme.patch'
     modules:
       - name: libmpv
         cleanup:

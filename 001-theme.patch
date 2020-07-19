@@ -1,0 +1,34 @@
+diff --git a/src/main.cpp b/src/main.cpp
+index 8dac90a..fcaf033 100644
+--- a/src/main.cpp
++++ b/src/main.cpp
+@@ -23,6 +23,7 @@
+ #include <QQuickItem>
+ #include <QQuickStyle>
+ #include <QQuickView>
++#include <QStyle>
+ #include <QThread>
+ 
+ #include <KAboutData>
+@@ -35,10 +36,20 @@ int main(int argc, char *argv[])
+     QApplication::setOrganizationName("georgefb");
+     QApplication::setOrganizationDomain("georgefb.com");
+     QApplication::setWindowIcon(QIcon::fromTheme("com.georgefb.haruna"));
+-    QQuickStyle::setFallbackStyle(QStringLiteral("org.kde.desktop"));
+ 
+     QApplication app(argc, argv);
+ 
++    if (QApplication::style()->objectName().toLower() == "adwaita") {
++        QQuickStyle::setFallbackStyle(QStringLiteral("org.kde.desktop"));
++        QIcon::setThemeName("breeze");
++    } else if (QApplication::style()->objectName().toLower() == "adwaita-dark") {
++        QQuickStyle::setFallbackStyle(QStringLiteral("org.kde.desktop"));
++        QIcon::setThemeName("breeze-dark");
++    } else {
++        QQuickStyle::setStyle(QStringLiteral("org.kde.desktop"));
++        QIcon::setThemeName("breeze");
++    }
++
+     KAboutData aboutData(
+                 QStringLiteral("haruna"),
+                 i18n("Haruna Video Player"),
