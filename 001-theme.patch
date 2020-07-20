@@ -12,6 +12,7 @@ index 8dac90a..a2b7c8f 100644
  
 +    QQuickStyle::setStyle(QStringLiteral("org.kde.desktop"));
 +    QQuickStyle::setFallbackStyle(QStringLiteral("fusion"));
++    QIcon::setThemeName(QStringLiteral("breeze"));
 +
      KAboutData aboutData(
                  QStringLiteral("haruna"),
