@@ -1,8 +1,8 @@
 diff --git a/src/main.cpp b/src/main.cpp
-index 8dac90a..a2b7c8f 100644
+index 8dac90a..da5c2e4 100644
 --- a/src/main.cpp
 +++ b/src/main.cpp
-@@ -35,10 +35,12 @@ int main(int argc, char *argv[])
+@@ -35,10 +35,13 @@ int main(int argc, char *argv[])
      QApplication::setOrganizationName("georgefb");
      QApplication::setOrganizationDomain("georgefb.com");
      QApplication::setWindowIcon(QIcon::fromTheme("com.georgefb.haruna"));
