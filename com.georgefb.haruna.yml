@@ -21,8 +21,8 @@ modules:
     buildsystem: cmake-ninja
     sources:
       - type: archive
-        url: 'https://github.com/g-fb/haruna/archive/0.1.4.tar.gz'
-        sha256: c4cc1e1addbf39662da0a2d8c581bb81ebc6fbb3e06b0c671c2a0ad6ba6453fb
+        url: 'https://github.com/g-fb/haruna/archive/0.1.5.tar.gz'
+        sha256: 84dcd1b9ea172d720e755b795c7cb6d841391d04847aab33a0749e740ba68ae4
       - type: patch
         path: "001-force-breeze-icon-theme.patch"
     modules:
