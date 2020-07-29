@@ -21,8 +21,8 @@ modules:
     buildsystem: cmake-ninja
     sources:
       - type: archive
-        url: 'https://github.com/g-fb/haruna/archive/0.1.5.tar.gz'
-        sha256: 84dcd1b9ea172d720e755b795c7cb6d841391d04847aab33a0749e740ba68ae4
+        url: 'https://github.com/g-fb/haruna/archive/0.1.6.tar.gz'
+        sha256: b1c412bceef4c83feefcdc7dd890876b5a1e12223d6296e757bc1b85fad09593
       - type: patch
         path: "001-force-breeze-icon-theme.patch"
     modules:
@@ -149,5 +149,5 @@ modules:
           - install youtube-dl /app/bin
         sources:
           - type: archive
-            url: 'https://github.com/ytdl-org/youtube-dl/archive/2020.06.16.1.tar.gz'
-            sha256: 7cba21e613315ed5bcb07e416b4d70f53b95fc78db87e5f4e0a451c13a94bacf
+            url: 'https://github.com/ytdl-org/youtube-dl/archive/2020.07.28.tar.gz'
+            sha256: 5152cd77357640ffd7317ab6c55d8fa6e2443a266e2b7301053055a26aac013e
