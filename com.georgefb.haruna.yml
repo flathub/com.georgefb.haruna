@@ -22,7 +22,7 @@ modules:
     sources:
       - type: archive
         url: 'https://github.com/g-fb/haruna/archive/0.1.6.tar.gz'
-        sha256: b1c412bceef4c83feefcdc7dd890876b5a1e12223d6296e757bc1b85fad09593
+        sha256: be0ac0bf5ee4c608c92bdc923c12ae777464be6e8d5ec82a45106223ff9e6f73
       - type: patch
         path: "001-force-breeze-icon-theme.patch"
     modules:
@@ -97,11 +97,12 @@ modules:
               - '--enable-shared'
               - '--disable-static'
               - '--enable-gnutls'
+              - '--enable-gpl'
               - '--disable-doc'
               - '--disable-programs'
               - '--disable-encoders'
               - '--disable-muxers'
-              - '--enable-encoder=png'
+              - '--enable-encoder=png,libwebp'
               - '--enable-libv4l2'
               - '--enable-libdav1d'
               - '--enable-libfontconfig'
@@ -110,6 +111,7 @@ modules:
               - '--enable-librsvg'
               - '--enable-libvpx'
               - '--enable-libmp3lame'
+              - '--enable-libwebp'
             sources:
               - type: archive
                 url: 'https://ffmpeg.org/releases/ffmpeg-4.3.1.tar.xz'
