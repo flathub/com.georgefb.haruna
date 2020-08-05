@@ -1,19 +1,12 @@
 diff --git a/src/main.cpp b/src/main.cpp
-index 8dac90a..da5c2e4 100644
+index b040973..4a2ce81 100644
 --- a/src/main.cpp
 +++ b/src/main.cpp
-@@ -35,10 +35,13 @@ int main(int argc, char *argv[])
-     QApplication::setOrganizationName("georgefb");
-     QApplication::setOrganizationDomain("georgefb.com");
-     QApplication::setWindowIcon(QIcon::fromTheme("com.georgefb.haruna"));
--    QQuickStyle::setFallbackStyle(QStringLiteral("org.kde.desktop"));
+@@ -40,6 +40,7 @@ int main(int argc, char *argv[])
  
-     QApplication app(argc, argv);
- 
-+    QQuickStyle::setStyle(QStringLiteral("org.kde.desktop"));
-+    QQuickStyle::setFallbackStyle(QStringLiteral("fusion"));
+     QQuickStyle::setStyle(QStringLiteral("org.kde.desktop"));
+     QQuickStyle::setFallbackStyle(QStringLiteral("fusion"));
 +    QIcon::setThemeName(QStringLiteral("breeze"));
-+
+ 
      KAboutData aboutData(
                  QStringLiteral("haruna"),
-                 i18n("Haruna Video Player"),
