@@ -22,7 +22,7 @@ modules:
     sources:
       - type: archive
         url: 'https://github.com/g-fb/haruna/archive/0.1.8.tar.gz'
-        sha256: 413f86babdcf7b93139efa6621731a60c5048ef12436c2dff7cde3e74253bcd9
+        sha256: '99e6e58afe9f75a0decded8d78de64833a95cc6f3ead60700afca05b2fe0c0bc'
       - type: patch
         path: "001-force-breeze-icon-theme.patch"
     modules:
@@ -39,10 +39,10 @@ modules:
         sources:
           - type: archive
             url: 'https://github.com/mpv-player/mpv/archive/v0.32.0.tar.gz'
-            sha256: 9163f64832226d22e24bbc4874ebd6ac02372cd717bef15c28a0aa858c5fe592
+            sha256: '9163f64832226d22e24bbc4874ebd6ac02372cd717bef15c28a0aa858c5fe592'
           - type: file
             url: 'https://waf.io/waf-2.0.12'
-            sha256: 0979ca87f45928e0d752049ab2f43be8551249be73dc5563b944ec54f8871d1f
+            sha256: '0979ca87f45928e0d752049ab2f43be8551249be73dc5563b944ec54f8871d1f'
             dest-filename: waf
         modules:
           - name: luajit
@@ -56,7 +56,7 @@ modules:
             sources:
               - type: archive
                 url: 'http://luajit.org/download/LuaJIT-2.1.0-beta3.tar.gz'
-                sha256: 1ad2e34b111c802f9d0cdf019e986909123237a28c746b21295b63c9e785d9c3
+                sha256: '1ad2e34b111c802f9d0cdf019e986909123237a28c746b21295b63c9e785d9c3'
               - type: shell
                 commands:
                   - sed -i 's|/usr/local|/app|' ./Makefile
@@ -77,7 +77,7 @@ modules:
             sources:
               - type: archive
                 url: 'https://linuxtv.org/downloads/v4l-utils/v4l-utils-1.20.0.tar.bz2'
-                sha256: 956118713f7ccb405c55c7088a6a2490c32d54300dd9a30d8d5008c28d3726f7
+                sha256: '956118713f7ccb405c55c7088a6a2490c32d54300dd9a30d8d5008c28d3726f7'
           - name: nv-codec-headers
             cleanup:
               - '*'
@@ -87,7 +87,7 @@ modules:
             sources:
               - type: archive
                 url: 'https://github.com/FFmpeg/nv-codec-headers/archive/n10.0.26.0.tar.gz'
-                sha256: c6bdac9693ba0a2a98290ef1e1d36bea8133a9fe2c6dc5b3679e9b78dc9fba00
+                sha256: 'c6bdac9693ba0a2a98290ef1e1d36bea8133a9fe2c6dc5b3679e9b78dc9fba00'
           - name: ffmpeg
             cleanup:
               - /include
@@ -115,7 +115,7 @@ modules:
             sources:
               - type: archive
                 url: 'https://ffmpeg.org/releases/ffmpeg-4.3.1.tar.xz'
-                sha256: ad009240d46e307b4e03a213a0f49c11b650e445b1f8be0dda2a9212b34d2ffb
+                sha256: 'ad009240d46e307b4e03a213a0f49c11b650e445b1f8be0dda2a9212b34d2ffb'
           - name: libass
             cleanup:
               - /include
@@ -126,7 +126,7 @@ modules:
             sources:
               - type: archive
                 url: 'https://github.com/libass/libass/archive/0.14.0.tar.gz'
-                sha256: 82e70ee1f9afe2e54ab4bf6510b83bb563fcb2af978f0f9da82e2dbc9ae0fd72
+                sha256: '82e70ee1f9afe2e54ab4bf6510b83bb563fcb2af978f0f9da82e2dbc9ae0fd72'
           - name: uchardet
             buildsystem: cmake-ninja
             config-opts:
@@ -140,7 +140,7 @@ modules:
             sources:
               - type: archive
                 url: 'https://gitlab.freedesktop.org/uchardet/uchardet/-/archive/v0.0.7/uchardet-v0.0.7.tar.gz'
-                sha256: f3635d1d10e1470452bc42c1bf509451a9926b399a11740a9949e86069d69f58
+                sha256: 'f3635d1d10e1470452bc42c1bf509451a9926b399a11740a9949e86069d69f58'
       - name: youtube-dl
         no-autogen: true
         no-make-install: true
@@ -152,4 +152,4 @@ modules:
         sources:
           - type: archive
             url: 'https://github.com/ytdl-org/youtube-dl/archive/2020.07.28.tar.gz'
-            sha256: 5152cd77357640ffd7317ab6c55d8fa6e2443a266e2b7301053055a26aac013e
+            sha256: '5152cd77357640ffd7317ab6c55d8fa6e2443a266e2b7301053055a26aac013e'
