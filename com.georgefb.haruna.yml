@@ -1,7 +1,7 @@
 ---
 app-id: com.georgefb.haruna
 runtime: org.kde.Platform
-runtime-version: '5.14'
+runtime-version: '5.15'
 sdk: org.kde.Sdk
 command: haruna
 finish-args:
@@ -21,8 +21,8 @@ modules:
     buildsystem: cmake-ninja
     sources:
       - type: archive
-        url: 'https://github.com/g-fb/haruna/archive/0.1.8.tar.gz'
-        sha256: '99e6e58afe9f75a0decded8d78de64833a95cc6f3ead60700afca05b2fe0c0bc'
+        url: 'https://github.com/g-fb/haruna/archive/0.2.0.tar.gz'
+        sha256: '9e804146065c6d34319796218ebf406a3aa886d8aba8456d4395a447b0d63e27'
       - type: patch
         path: "001-force-breeze-icon-theme.patch"
     modules:
@@ -86,8 +86,8 @@ modules:
               - PREFIX=/app
             sources:
               - type: archive
-                url: 'https://github.com/FFmpeg/nv-codec-headers/archive/n10.0.26.0.tar.gz'
-                sha256: 'c6bdac9693ba0a2a98290ef1e1d36bea8133a9fe2c6dc5b3679e9b78dc9fba00'
+                url: 'https://github.com/FFmpeg/nv-codec-headers/archive/n10.0.26.1.tar.gz'
+                sha256: 'a136e65b6d730b86f98610829e17ca654344224003800bf5d8a6c7232052bef0'
           - name: ffmpeg
             cleanup:
               - /include
@@ -151,5 +151,5 @@ modules:
           - install youtube-dl /app/bin
         sources:
           - type: archive
-            url: 'https://github.com/ytdl-org/youtube-dl/archive/2020.07.28.tar.gz'
-            sha256: '5152cd77357640ffd7317ab6c55d8fa6e2443a266e2b7301053055a26aac013e'
+            url: 'https://github.com/ytdl-org/youtube-dl/archive/2020.09.20.tar.gz'
+            sha256: 'ead79e9248aaf7667f015da2ccd4bde44a8948fa980f82965609cdca88ad285e'
