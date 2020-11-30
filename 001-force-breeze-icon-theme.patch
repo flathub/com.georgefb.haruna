@@ -1,12 +1,12 @@
-diff --git a/src/main.cpp b/src/main.cpp
-index b040973..4a2ce81 100644
---- a/src/main.cpp
-+++ b/src/main.cpp
-@@ -40,6 +40,7 @@ int main(int argc, char *argv[])
+diff --git a/src/application.cpp b/src/application.cpp
+index 6b45b2b..bc569c2 100644
+--- a/src/application.cpp
++++ b/src/application.cpp
+@@ -65,6 +65,7 @@ static QApplication *createApplication(int &argc, char **argv, const QString &ap
  
      QQuickStyle::setStyle(QStringLiteral("org.kde.desktop"));
-     QQuickStyle::setFallbackStyle(QStringLiteral("fusion"));
+     QQuickStyle::setFallbackStyle(QStringLiteral("Fusion"));
 +    QIcon::setThemeName(QStringLiteral("breeze"));
  
-     KAboutData aboutData(
-                 QStringLiteral("haruna"),
+     QApplication *app = new QApplication(argc, argv);
+     return app;
