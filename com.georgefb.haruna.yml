@@ -16,13 +16,20 @@ finish-args:
   - '--talk-name=org.freedesktop.ScreenSaver'
   - '--env=DCONF_USER_CONFIG_DIR=.config/dconf'
   - '--env=LC_NUMERIC=C'
+  - '--env=XDG_DATA_DIRS=/usr/share:/app/share/'
 modules:
+  - name: ffmpegthumbs
+    buildsystem: cmake-ninja
+    sources:
+      - type: archive
+        url: 'https://invent.kde.org/multimedia/ffmpegthumbs/-/archive/v20.08.3/ffmpegthumbs-v20.08.3.tar.gz'
+        sha256: 'a8f7bce52b30d26802fe1ab1e2c569a31ecf5398fa7e949425a01ddfe013bb11'
   - name: haruna
     buildsystem: cmake-ninja
     sources:
       - type: archive
-        url: 'https://github.com/g-fb/haruna/archive/0.3.1.tar.gz'
-        sha256: 'b1a5307177810941a164b8da82f437cf83709904f71240b25263edca7b3c2847'
+        url: 'https://github.com/g-fb/haruna/archive/0.4.0.tar.gz'
+        sha256: 'f967efc050ec402160a6937a56ece5b0f996872d87aaaf3c5a2aa2f3704f7de2'
       - type: patch
         path: "001-force-breeze-icon-theme.patch"
     modules:
@@ -151,5 +158,5 @@ modules:
           - install youtube-dl /app/bin
         sources:
           - type: archive
-            url: 'https://github.com/ytdl-org/youtube-dl/archive/2020.11.29.tar.gz'
-            sha256: '9a504f7676b74260c770f123a4bce95f36658f5152685011d45aa7b4a38f2fb3'
+            url: 'https://github.com/ytdl-org/youtube-dl/archive/2020.12.07.tar.gz'
+            sha256: 'ffef1eefa399bf56944b022e6452ec148fb03f6fd8d54ffe00206b41b14325d9'
