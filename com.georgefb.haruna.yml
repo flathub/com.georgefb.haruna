@@ -18,6 +18,12 @@ finish-args:
   - '--env=LC_NUMERIC=C'
   - '--env=XDG_DATA_DIRS=/usr/share:/app/share/'
 modules:
+  - name: ffmpegthumbs
+    buildsystem: cmake-ninja
+    sources:
+      - type: archive
+        url: 'https://invent.kde.org/multimedia/ffmpegthumbs/-/archive/v20.08.3/ffmpegthumbs-v20.08.3.tar.gz'
+        sha256: 'a8f7bce52b30d26802fe1ab1e2c569a31ecf5398fa7e949425a01ddfe013bb11'
   - name: kio-extras
     buildsystem: cmake-ninja
     sources:
