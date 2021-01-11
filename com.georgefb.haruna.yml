@@ -18,26 +18,34 @@ finish-args:
   - '--env=LC_NUMERIC=C'
   - '--env=XDG_DATA_DIRS=/usr/share:/app/share/'
 modules:
+  - name: taglib
+    buildsystem: cmake-ninja
+    config-opts:
+      - '-DBUILD_SHARED_LIBS=ON'
+    sources:
+      - type: archive
+        url: 'http://taglib.github.io/releases/taglib-1.11.1.tar.gz'
+        sha256: 'b6d1a5a610aae6ff39d93de5efd0fdc787aa9e9dc1e7026fa4c961b26563526b'
   - name: ffmpegthumbs
     buildsystem: cmake-ninja
     sources:
       - type: archive
-        url: 'https://invent.kde.org/multimedia/ffmpegthumbs/-/archive/v20.08.3/ffmpegthumbs-v20.08.3.tar.gz'
-        sha256: 'a8f7bce52b30d26802fe1ab1e2c569a31ecf5398fa7e949425a01ddfe013bb11'
+        url: 'https://invent.kde.org/multimedia/ffmpegthumbs/-/archive/v20.12.1/ffmpegthumbs-v20.12.1.tar.gz'
+        sha256: '473199a3a883b858152f4ef346c6f59c81013ab12b563995dfd288f8575dd3d5'
   - name: kio-extras
     buildsystem: cmake-ninja
     sources:
       - type: archive
-        url: 'https://invent.kde.org/network/kio-extras/-/archive/v20.08.3/kio-extras-v20.08.3.tar.gz'
-        sha256: '7d26317d90c555e5f300f9e78822f033b73c611ce0a798f2ecd20969432210fa'
+        url: 'https://invent.kde.org/network/kio-extras/-/archive/v20.08.3/kio-extras-v20.12.1.tar.gz'
+        sha256: 'ab6646a4f9e17f50d7f4d2e1f90b3f4b5880cc827a0a8e3b1e504732b2f16b84'
   - name: haruna
     buildsystem: cmake-ninja
     sources:
       - type: archive
-        url: 'https://github.com/g-fb/haruna/archive/0.4.2.tar.gz'
-        sha256: '43d5b5c7579e99f68a76826e193082a6d327398c68d0e7d79794a3d77e2d1e51'
+        url: 'https://github.com/g-fb/haruna/archive/0.5.0.tar.gz'
+        sha256: 'ebc6144a18f3a7ec7460cdefb77b1b170a049f7987f833e745ca12fd741f5078'
       - type: patch
-        path: "001-force-breeze-icon-theme.patch"
+        path: '001-force-breeze-icon-theme.patch'
     modules:
       - name: libmpv
         cleanup:
@@ -164,5 +172,5 @@ modules:
           - install youtube-dl /app/bin
         sources:
           - type: archive
-            url: 'https://github.com/ytdl-org/youtube-dl/archive/2020.12.07.tar.gz'
-            sha256: 'ffef1eefa399bf56944b022e6452ec148fb03f6fd8d54ffe00206b41b14325d9'
+            url: 'https://github.com/ytdl-org/youtube-dl/archive/2021.01.08.tar.gz'
+            sha256: '369b3be73f2f9996d16f384d9d0eb55b4b51be74614e247f7ecf839c71d1d084'
