@@ -30,20 +30,20 @@ modules:
     buildsystem: cmake-ninja
     sources:
       - type: archive
-        url: 'https://invent.kde.org/multimedia/ffmpegthumbs/-/archive/v20.12.1/ffmpegthumbs-v20.12.1.tar.gz'
-        sha256: '473199a3a883b858152f4ef346c6f59c81013ab12b563995dfd288f8575dd3d5'
+        url: 'https://invent.kde.org/multimedia/ffmpegthumbs/-/archive/v20.12.2/ffmpegthumbs-v20.12.2.tar.gz'
+        sha256: 'ec41de0b9adfc48836bee5592b4b88bbda8ab5236ab914e1f0d5d6b5ee84904b'
   - name: kio-extras
     buildsystem: cmake-ninja
     sources:
       - type: archive
-        url: 'https://invent.kde.org/network/kio-extras/-/archive/v20.08.3/kio-extras-v20.12.1.tar.gz'
-        sha256: 'ab6646a4f9e17f50d7f4d2e1f90b3f4b5880cc827a0a8e3b1e504732b2f16b84'
+        url: 'https://invent.kde.org/network/kio-extras/-/archive/v20.12.2/kio-extras-v20.12.2.tar.gz'
+        sha256: 'b9a6d63beb728b6b6b8bf71049cfec9d8c502f2b66c141ee5c5a35c606cd7da2'
   - name: haruna
     buildsystem: cmake-ninja
     sources:
       - type: git
         url: 'https://github.com/g-fb/haruna'
-        commit: '1334f260103436e11d9d158fbd9de98ec6e237fd'
+        commit: '9aad41001d633dabbd2c5e9937bd11d76bf3eede'
       - type: patch
         path: '001-force-breeze-icon-theme.patch'
     modules:
