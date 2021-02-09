@@ -43,7 +43,7 @@ modules:
     sources:
       - type: git
         url: 'https://github.com/g-fb/haruna'
-        commit: '9aad41001d633dabbd2c5e9937bd11d76bf3eede'
+        commit: '2106ade1fb3cb87430f6ba24854efd93c08afc11'
       - type: patch
         path: '001-force-breeze-icon-theme.patch'
     modules:
