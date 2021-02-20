@@ -43,9 +43,7 @@ modules:
     sources:
       - type: git
         url: 'https://github.com/g-fb/haruna'
-        commit: '82b0c55fc0f0153a1d3fc7eb2f3a57374075e568'
-      - type: patch
-        path: '001-force-breeze-icon-theme.patch'
+        commit: 'b34bcaa7ac6abfabc65d2ea83c5ca07cee01f432'
     modules:
       - name: libmpv
         cleanup:
