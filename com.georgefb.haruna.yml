@@ -43,7 +43,7 @@ modules:
     sources:
       - type: git
         url: 'https://github.com/g-fb/haruna'
-        commit: '3dfa3cc719b94317f32d860f368506f6effb7e3b'
+        commit: '816e05dc2346aa5c6c8672a26d05ab5b2558e45c'
     modules:
       - name: libmpv
         cleanup:
