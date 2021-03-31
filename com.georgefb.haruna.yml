@@ -19,33 +19,33 @@ finish-args:
   - '--env=LC_NUMERIC=C'
   - '--env=XDG_DATA_DIRS=/usr/share:/app/share/'
 modules:
-  - name: taglib
-    buildsystem: cmake-ninja
-    config-opts:
-      - '-DBUILD_SHARED_LIBS=ON'
-    sources:
-      - type: archive
-        url: 'http://taglib.github.io/releases/taglib-1.11.1.tar.gz'
-        sha256: 'b6d1a5a610aae6ff39d93de5efd0fdc787aa9e9dc1e7026fa4c961b26563526b'
-  - name: ffmpegthumbs
-    buildsystem: cmake-ninja
-    sources:
-      - type: archive
-        url: 'https://invent.kde.org/multimedia/ffmpegthumbs/-/archive/v20.12.2/ffmpegthumbs-v20.12.2.tar.gz'
-        sha256: 'ec41de0b9adfc48836bee5592b4b88bbda8ab5236ab914e1f0d5d6b5ee84904b'
-  - name: kio-extras
-    buildsystem: cmake-ninja
-    sources:
-      - type: archive
-        url: 'https://invent.kde.org/network/kio-extras/-/archive/v20.12.2/kio-extras-v20.12.2.tar.gz'
-        sha256: 'b9a6d63beb728b6b6b8bf71049cfec9d8c502f2b66c141ee5c5a35c606cd7da2'
   - name: haruna
     buildsystem: cmake-ninja
     sources:
-      - type: git
-        url: 'https://github.com/g-fb/haruna'
-        commit: '6c69d15c849f8de354cbd5e1f0d3f86eac98671d'
+      - type: archive
+        url: 'https://github.com/g-fb/haruna/archive/refs/tags/0.6.0.tar.gz'
+        sha256: '07e762612902c943f0e2508d3e1f5b65aad07a8f50ca70e5dc5191550aab95b9'
     modules:
+      - name: taglib
+        buildsystem: cmake-ninja
+        config-opts:
+        - '-DBUILD_SHARED_LIBS=ON'
+        sources:
+        - type: archive
+          url: 'https://github.com/taglib/taglib/releases/download/v1.12/taglib-1.12.tar.gz'
+          sha256: '7fccd07669a523b07a15bd24c8da1bbb92206cb19e9366c3692af3d79253b703'
+      - name: ffmpegthumbs
+        buildsystem: cmake-ninja
+        sources:
+        - type: archive
+          url: 'https://invent.kde.org/multimedia/ffmpegthumbs/-/archive/v20.12.3/ffmpegthumbs-v20.12.3.tar.gz'
+          sha256: '9292a503808688b37e45ee336efcd28c39035d49c96e1df466b091f2eaf7a529'
+      - name: kio-extras
+        buildsystem: cmake-ninja
+        sources:
+        - type: archive
+          url: 'https://invent.kde.org/network/kio-extras/-/archive/v20.12.3/kio-extras-v20.12.3.tar.gz'
+          sha256: 'bedccdbf3664f2669270c2864c6f7c0e73237d18fae04067bc21ae5e12716b0b'
       - name: libmpv
         cleanup:
           - /include
@@ -134,8 +134,8 @@ modules:
               - '--enable-libwebp'
             sources:
               - type: archive
-                url: 'https://ffmpeg.org/releases/ffmpeg-4.3.1.tar.xz'
-                sha256: 'ad009240d46e307b4e03a213a0f49c11b650e445b1f8be0dda2a9212b34d2ffb'
+                url: 'https://ffmpeg.org/releases/ffmpeg-4.3.2.tar.xz'
+                sha256: '46e4e64f1dd0233cbc0934b9f1c0da676008cad34725113fb7f802cfa84ccddb'
           - name: libass
             cleanup:
               - /include
@@ -171,5 +171,5 @@ modules:
           - install youtube-dl /app/bin
         sources:
           - type: archive
-            url: 'https://github.com/ytdl-org/youtube-dl/archive/2021.01.08.tar.gz'
-            sha256: '369b3be73f2f9996d16f384d9d0eb55b4b51be74614e247f7ecf839c71d1d084'
+            url: 'https://github.com/ytdl-org/youtube-dl/archive/2021.03.31.tar.gz'
+            sha256: '3685ad44e5c75c02e3c1b35a63cbdec30992467d486a9b0f6463e71d07eb0c88'
