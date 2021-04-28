@@ -23,8 +23,8 @@ modules:
     buildsystem: cmake-ninja
     sources:
       - type: archive
-        url: 'https://github.com/g-fb/haruna/archive/refs/tags/0.6.2.tar.gz'
-        sha256: '1b4be96db971fc91c8bea588007bf9a2e6456528be2f91f2340919342d1b03f8'
+        url: 'https://github.com/g-fb/haruna/archive/refs/tags/0.6.3.tar.gz'
+        sha256: 'c79ec1e351f47faf9a58a6ba7ec3cc05cfdc5423fde0584f2d4081f5058363e3'
     modules:
       - name: taglib
         buildsystem: cmake-ninja
@@ -171,5 +171,5 @@ modules:
           - install youtube-dl /app/bin
         sources:
           - type: archive
-            url: 'https://github.com/ytdl-org/youtube-dl/archive/2021.04.17.tar.gz'
-            sha256: 'ac483ef0bd1ea6ef284f0b7f81de5b30565ea834846d0ab5fd54c4919af0d25f'
+            url: 'https://github.com/ytdl-org/youtube-dl/archive/2021.04.26.tar.gz'
+            sha256: 'd80023ab221b3cb89229b632e247035a22c5afaee9a7b3c653bbd702f71c1083'
