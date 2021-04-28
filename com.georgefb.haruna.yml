@@ -24,7 +24,7 @@ modules:
     sources:
       - type: git
         url: 'https://github.com/g-fb/haruna'
-        commit: '979c7e3b14c425db5013348124f0ad45a300357b'
+        commit: 'e1799a180b3491522ab07a541fbd8289c5d60ddd'
     modules:
       - name: taglib
         buildsystem: cmake-ninja
